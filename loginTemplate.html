@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <title>log in</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Log in
+          </button>
+          <button type="button" class="toggle-btn" onclick="signup()">
+            Sign up
+          </button>
+        </div>
+
+        <div class="social-icons">
+          <i class="fab fa-facebook social-icons"></i>
+          <i class="fab fa-google social-icons"></i>
+          <i class="fab fa-github social-icons"></i>
+        </div>
+
+        <!-- Log in form -->
+
+        <form id="login" class="input-group">
+          <input type="text" class="input-field" placeholder="Email" required />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="password"
+            required
+          />
+          <input type="checkbox" class="check-box" />
+          <label for="check-box"> Remember password </label>
+          <button type="submit" class="submit-btn">Log in</button>
+        </form>
+
+        <!-- sign up form -->
+
+        <form id="signup" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Full Name"
+            required
+          />
+          <input type="text" class="input-field" placeholder="Email" required />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="password"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Confirm password"
+            required
+          />
+          <input type="checkbox" class="check-box" />
+          <label for="check-box"> i agree to the terms & condtions</label>
+          <button type="submit" class="submit-btn">Sign up</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
